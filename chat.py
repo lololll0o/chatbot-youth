@@ -3,7 +3,7 @@ from llm import stream_ai_msg
 import uuid
 
 st.set_page_config(page_title="서울시 청년정책 관련 상담 챗봇", page_icon="🌱")
-st.title("🚩서울시 청년정책 담당 AI상담페이지🌞")
+st.title("🚩서울 청년정책 관련 챗봇상담🌞")
 
 query_params = st.query_params
 
