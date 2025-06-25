@@ -2,3 +2,5 @@
 
 #문서
 /secret
+/chatbot
+/__pycache__
