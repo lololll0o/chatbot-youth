@@ -1,9 +1,10 @@
 import streamlit as st
+import streamlit.components.v1 as components
 from llm import stream_ai_msg
 import uuid
 
 st.set_page_config(page_title="서울시 청년정책 관련 상담 챗봇", page_icon="🌱", layout="wide",)
-st.markdown("""
+html_code = """
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css">
             
 <style>
@@ -70,7 +71,9 @@ div:has(.stMarkdown) + div [data-testid="stChatMessageContent"] {
 
 <h1 class="title-shadow"> <span>서울시 청년정책, 제가 요약해드림 🧠</span> </h1>
 <div style="margin-bottom: 40px;"></div>
-""", unsafe_allow_html=True)
+"""
+
+components.html(html_code, height=200)
 
 
 
