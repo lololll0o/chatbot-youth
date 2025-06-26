@@ -9,75 +9,8 @@ st.set_page_config(
     layout="wide",
 )
 
-# 전역 스타일 삽입 (폰트, 배경, 채팅 말풍선 등 포함)
-st.markdown("""
-<style>
-@font-face {
-    font-family: 'Pretendard';
-    font-style: normal;
-    font-weight: 400;
-    src: url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/woff2/Pretendard-Regular.woff2') format('woff2');
-}
-
-.stApp {
-    font-family: 'Pretendard', sans-serif !important;
-    background: linear-gradient(135deg, #b2dbff 0%, #fefcea 100%) !important;
-}
-
-main, .block-container {
-  background: transparent !important;
-}
-            
-h1.title-shadow {
-    text-align: center;
-    font-size: 2.5rem;
-    padding: 30px 40px;
-    margin-bottom: 30px;
-    background: rgba(255, 255, 255, 0.15);
-    color: #ffffff;
-    border: 2px solid rgba(255, 255, 255, 0.5);
-    border-radius: 32px;
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
-    font-weight: 700;
-}
-
-[data-testid="stChatInput"] {
-  background: transparent !important;
-  border-top: none !important;
-}
-
-[data-testid="stChatInput"] textarea {
-  background: rgba(255,255,255,0.8);
-  border: 2px solid #ffffff;
-  border-radius: 16px;
-  color: #111111;
-  font-size: 1rem;
-  font-weight: 500;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.05);
-}
-
-[data-testid="stChatMessageContent"] {
-  background: rgba(255, 255, 255, 0.3);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 2px solid rgba(255, 255, 255, 0.5);
-  border-radius: 24px;
-  padding: 16px 20px;
-  margin: 12px 0px;
-  color: #1f1f1f;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.06);
-}
-
-
-</style>
-""", unsafe_allow_html=True)
-
 # 타이틀 출력
-st.markdown("""
-<h1 class="title-shadow">서울시 청년정책, 제가 요약해드림 🧠</h1>
-""", unsafe_allow_html=True)
+st.title("서울시 청년정책, 제가 요약해드림 🧠")
 
 # 세션 ID 처리
 query_params = st.query_params
